@@ -65,4 +65,7 @@ php sender.php
 ## Credits
 
 Inspired by Benjamin post [Using php-fpm as a simple built-in async queue](https://tideways.com/profiler/blog/using-php-fpm-as-a-simple-built-in-async-queue)
-            
+
+## License
+
+[MIT License](LICENSE)            

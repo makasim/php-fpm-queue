@@ -38,6 +38,8 @@ use Makasim\PhpFpm\PhpFpmConnectionFactory;
 require_once __DIR__.'/vendor/autoload.php';
 
 $context = (new PhpFpmConnectionFactory('tcp://localhost:9000'))->createContext();
+// or
+//$context = (new PhpFpmConnectionFactory('unix:///var/run/php/php7.1-fpm.sock'))->createContext(); 
 
 $queue = $context->createQueue(__FILE__);
 

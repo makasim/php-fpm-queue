@@ -22,7 +22,7 @@ class PhpFpmConnectionFactory implements ConnectionFactory
 
     public function createContext(): Context
     {
-        $dsn = new Dsn($this->dsn);
+        $dsn = Dsn::parseFirst($this->dsn);
         if ('unix' == $dsn->getSchemeProtocol()) {
             $socket = new UnixDomainSocket($dsn->getPath());
         } else if ('tcp' == $dsn->getSchemeProtocol()) {

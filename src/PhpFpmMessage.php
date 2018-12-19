@@ -2,7 +2,7 @@
 namespace Makasim\PhpFpm;
 
 use Interop\Queue\Message;
-use Interop\Queue\MessageTrait;
+use Interop\Queue\Impl\MessageTrait;
 
 class PhpFpmMessage implements Message, \JsonSerializable
 {
